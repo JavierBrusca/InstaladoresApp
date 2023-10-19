@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'incidencias',
+    loadChildren: () => import('./incidencias/incidencias.module').then( m => m.IncidenciasPageModule)
+  },
+  {
+    path: 'comunicaciones',
+    loadChildren: () => import('./comunicaciones/comunicaciones.module').then( m => m.ComunicacionesPageModule)
+  },
 ];
 
 @NgModule({
