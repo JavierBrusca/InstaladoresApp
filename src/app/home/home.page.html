@@ -3,7 +3,11 @@
     <ion-title>
       Blank
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+  </ion-buttons>
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -13,8 +17,8 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="container"> 
+    <ion-button [routerLink]="['/incidencias']" color="primary" expand="block">Incidencias</ion-button>
+    <ion-button [routerLink]="['/comunicaciones']" color="primary" expand="block">Comunicaciones Internas</ion-button>
   </div>
 </ion-content>
